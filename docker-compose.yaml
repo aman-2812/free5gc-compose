@@ -213,7 +213,12 @@ services:
     command: ./nr-gnb -c ./config/gnbcfg.yaml
     volumes:
       - ./config/gnbcfg.yaml:/ueransim/config/gnbcfg.yaml
-      - ./config/uecfg.yaml:/ueransim/config/uecfg.yaml
+      - ./config/uecfg1.yaml:/ueransim/config/uecfg1.yaml
+      - ./config/uecfg2.yaml:/ueransim/config/uecfg2.yaml
+      - ./config/uecfg3.yaml:/ueransim/config/uecfg3.yaml
+      - ./config/uecfg4.yaml:/ueransim/config/uecfg4.yaml
+      - ./config/uecfg5.yaml:/ueransim/config/uecfg5.yaml
+      - ./start_simulation.sh:/ueransim/start_simulation.sh
     cap_add:
       - NET_ADMIN
     devices:
